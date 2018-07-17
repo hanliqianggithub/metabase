@@ -23,6 +23,7 @@ import EntityMenu from "metabase/components/EntityMenu";
 import VirtualizedList from "metabase/components/VirtualizedList";
 import BrowserCrumbs from "metabase/components/BrowserCrumbs";
 import ItemTypeFilterBar from "metabase/components/ItemTypeFilterBar";
+import PageHeading from "metabase/components/PageHeading"
 
 import CollectionMoveModal from "metabase/containers/CollectionMoveModal";
 import { entityObjectLoader } from "metabase/entities/containers/EntityObjectLoader";
@@ -183,7 +184,7 @@ class DefaultLanding extends React.Component {
                   ]}
                 />
               </Box>
-              <h1 style={{ fontWeight: 900 }}>{collection.name}</h1>
+              <PageHeading>{collection.name}</PageHeading>
             </Box>
 
             <Flex ml="auto">
